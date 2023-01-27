@@ -32,4 +32,16 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('angularTestingProject app is running!');
   });
+
+  it('this is my test', ()=> {
+    expect(true).toBe(true);
+  });
+
+  // tobe is used for premitive data type and toEqual are use moslty derived data type.
+  it('toBe and toEqual test case',()=> {
+    let a = ["Hello"];
+    let b = ["Hello"];
+    expect(a).toEqual(b);
+  });
+
 });
